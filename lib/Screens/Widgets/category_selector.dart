@@ -10,23 +10,30 @@ class _CategorySelectorState extends State<CategorySelector> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 90,
-      color: Colors.blue,
+      height: 80,
+      color: Theme.of(context).primaryColor,
       child:ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: category.length,
         itemBuilder: (BuildContext context , int index){
-         return Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20 , vertical: 30),
+         return GestureDetector(
+           onTap: (){
+             setState(() {
+               selectedIndex = index;
+             });
+           },
+           child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15 , vertical: 20),
               child: Text(
                 category[index],
                 style: TextStyle(
                   color: index == selectedIndex ?Colors.white : Colors.white60,
                   fontWeight: FontWeight.bold,
-                  fontSize: 20,
+                  fontSize: 18,
                   letterSpacing: 1.5
                 ),
                 ),
+         ),
          );
         },
       )
