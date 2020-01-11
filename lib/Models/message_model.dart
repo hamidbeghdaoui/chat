@@ -30,7 +30,7 @@ class Message {
   );
   final User ahlam = User(
      id: 3,
-     name: 'karim',
+     name: 'ahlam',
      imageURL: 'assets/image/4.jpg'
   );
   final User abdelnmour = User(
@@ -42,11 +42,6 @@ class Message {
      id: 5,
      name: 'karim',
      imageURL: 'assets/image/6.jpg'
-  );
-  final User amine = User(
-     id: 6,
-     name: 'amine',
-     imageURL: 'assets/image/7.jpg'
   );
   final User merouan = User(
      id: 7,
@@ -68,7 +63,7 @@ class Message {
 
 
 
-  List <User> favorites = [walid,oussama,younes,ahlam,karim,amine,merouan,farid,sohila];
+  List <User> favorites = [walid,oussama,younes,ahlam,karim,merouan,farid,sohila];
 
   List <Message> chate = [
     Message(
