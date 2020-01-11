@@ -51,12 +51,12 @@ class Message {
   final User farid = User(
      id: 8,
      name: 'farid',
-     imageURL: 'assets/image/9.jpg'
+     imageURL: 'assets/image/10.jpg'
   );
   final User sohila = User(
      id: 9,
      name: 'sohila',
-     imageURL: 'assets/image/10.jpg'
+     imageURL: 'assets/image/9.jpg'
   );
 
   
@@ -71,34 +71,48 @@ class Message {
       time: '4:30 PM',
       text: 'hey ,How is it going ? what did you do tody ?',
       isLiked: true,
-      unread: false
+      unread: true
           ),
     Message(
       usersend: abdelnmour,
-      time: '4:30 PM',
+      time: '3:23 PM',
       text: 'hey ,How is it going ? what did you do tody ?',
-      isLiked: true,
+      isLiked: false,
       unread: false
           ),
     Message(
       usersend: karim,
-      time: '4:30 PM',
+      time: '2:30 PM',
       text: 'hey ,How is it going ? what did you do tody ?',
       isLiked: true,
-      unread: false
+      unread: true
           ),
     Message(
       usersend: sohila,
-      time: '4:30 PM',
+      time: '17:00 PM',
       text: 'hey ,How is it going ? what did you do tody ?',
       isLiked: true,
       unread: false
           ),
     Message(
-      usersend: walid,
-      time: '4:30 PM',
+      usersend: farid,
+      time: '20:56 PM',
       text: 'hey ,How is it going ? what did you do tody ?',
       isLiked: true,
+      unread: false
+          ),
+    Message(
+      usersend: merouan,
+      time: '10:56 PM',
+      text: 'hey ,How is it going ? what did you do tody ?',
+      isLiked: true,
+      unread: true
+          ),
+    Message(
+      usersend: ahlam,
+      time: '01:56 PM',
+      text: 'hey ,How is it going ? what did you do tody ?',
+      isLiked: false,
       unread: false
           ),
 
