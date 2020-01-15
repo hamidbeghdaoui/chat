@@ -23,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
         title: Text(
           "Chats",
-          textAlign: TextAlign.center,
           style: TextStyle(
               fontSize: 24, fontWeight: FontWeight.bold, letterSpacing: 1.6),
         ),

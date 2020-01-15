@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/Models/message_model.dart';
+
+import '../chat_sceen.dart';
 class FavoriteContact extends StatefulWidget {
   @override
   _FavoriteContactState createState() => _FavoriteContactState();
@@ -44,15 +46,22 @@ class _FavoriteContactState extends State<FavoriteContact> {
             itemBuilder: (BuildContext context, int  index){
                return Padding(
                  padding: const EdgeInsets.all(6),
-                 child: Column(
-                   children: <Widget>[
-                     CircleAvatar(
-                       backgroundImage: AssetImage(favorites[index].imageURL),
-                       radius: 30,
-                     ),
-                     SizedBox(height: 5,),
-                     Text(favorites[index].name , style: TextStyle(color: Colors.blueGrey),)
-                   ],
+                 child: GestureDetector(
+                    onTap: () => Navigator.push(context, MaterialPageRoute(
+                builder: (_)=>ChatSceen(
+                  user: favorites[index],
+                ),
+              )),
+                                    child: Column(
+                     children: <Widget>[
+                       CircleAvatar(
+                         backgroundImage: AssetImage(favorites[index].imageURL),
+                         radius: 30,
+                       ),
+                       SizedBox(height: 5,),
+                       Text(favorites[index].name , style: TextStyle(color: Colors.blueGrey),)
+                     ],
+                   ),
                  ),
                );
             },
